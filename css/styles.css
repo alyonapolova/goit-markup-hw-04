@@ -177,52 +177,16 @@ img {
 .benefits-item {
   width: calc((100%-72px) / 4);
 }
-.strategy-item::before {
-  display: block;
+.benefits-item::before {
   content: '';
-
+  display: block;
   height: 112px;
   background-color: #f4f4fd;
-  background-image: url(../images/antenna\ 1.png);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
+  border-radius: 4px;
 }
-.punctuality::before {
-  display: block;
-  content: '';
-
-  height: 112px;
-  background-color: #f4f4fd;
-  background-image: url(../images/clock\ 1.png);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
+.benefits-item:hover::before {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-
-.deligence::before {
-  display: block;
-  content: '';
-
-  height: 112px;
-  background-color: #f4f4fd;
-  background-image: url(../images/diagram\ 1.png);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
-}
-.technologies::before {
-  display: block;
-  content: '';
-
-  height: 112px;
-  background-color: #f4f4fd;
-  background-image: url(../images/astronaut\ 1.png);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
-}
-
 .benefits-title {
   margin-bottom: 8px;
   font-weight: 500;

@@ -44,7 +44,6 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 1px solid black;
 }
 .section {
   padding-top: 120px;
@@ -177,17 +176,20 @@ img {
 .benefits-item {
   width: calc((100%-72px) / 4);
 }
-.benefits-item::before {
-  content: '';
-  display: block;
+.benefits-bg {
+  display: flex;
   height: 112px;
   background-color: #f4f4fd;
   border-radius: 4px;
+  justify-content: center;
+  align-items: center;
 }
-.benefits-item:hover::before {
+
+.benefits-bg:hover {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .benefits-title {
+  margin-top: 8px;
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
@@ -247,10 +249,10 @@ img {
   width: calc((100% - 72px) / 4);
   padding-bottom: 32px;
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
   background-color: #ffffff;
+  
 }
 .team-item > img {
   margin-bottom: 32px;
@@ -265,11 +267,73 @@ img {
 }
 .team-text {
   margin-top: 8px;
+  margin-bottom: 8px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
+.team-soc-list{display: flex;
+justify-content: center;
+gap: 24px;}
+
+.team-soc-item{
+width: 40px;
+height: 40px;
+
+}
+.team-soc-link{
+width: 100%;
+height: 100%;
+border-radius: 50%;
+background-color: #4D5AE5;;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.team-soc-link:is(:hover, :focus){background-color: #404BBF;;}
+
+/** -----------------------CUSTOMERS---------------------- */
+.customers{padding-top: 120px;padding-bottom: 120px;}
+
+.customers-title{
+  margin-bottom: 72px;
+  font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: #2E2F42;}
+
+.customer-item{
+
+width: 188px;
+height: 88px;}
+
+.customers-link{
+display: flex;
+width: 100%;
+height: 100%;
+border: 1px solid #8E8F99;
+border-radius: 4px;
+align-items: center;
+justify-content: center;
+}
+.customers-logo-icon{fill: #8E8F99;;}
+.customers-link:is(:hover, :focus){
+  border: 1px solid #404BBF;
+  border-radius: 4px;}
+
+  .customers-link:hover > .customers-logo-icon{
+    fill:#404BBF;}
+
+    .customers-list{
+  display: flex;
+  gap: 24px;
+}
+
 /** -----------------------FOOTER---------------------- */
 .footer {
   background-color: #2e2f42;
@@ -303,6 +367,7 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
+
 
 /** -----------------------MENU-PORTFOLIO---------------------- */
 .menu {

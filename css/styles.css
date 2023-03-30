@@ -44,6 +44,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  outline: 1px solid black;
 }
 .section {
   padding-top: 120px;
@@ -127,10 +128,19 @@ img {
 
 /** -----------------------MORE---------------------- */
 .more {
-  padding-top: 188px;
-  padding-bottom: 188px;
   background-color: #2e2f42;
   text-align: center;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/more_bg.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto auto;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .more-title {
   font-weight: 700;
@@ -167,6 +177,52 @@ img {
 .benefits-item {
   width: calc((100%-72px) / 4);
 }
+.strategy-item::before {
+  display: block;
+  content: '';
+
+  height: 112px;
+  background-color: #f4f4fd;
+  background-image: url(../images/antenna\ 1.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+.punctuality::before {
+  display: block;
+  content: '';
+
+  height: 112px;
+  background-color: #f4f4fd;
+  background-image: url(../images/clock\ 1.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.deligence::before {
+  display: block;
+  content: '';
+
+  height: 112px;
+  background-color: #f4f4fd;
+  background-image: url(../images/diagram\ 1.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+.technologies::before {
+  display: block;
+  content: '';
+
+  height: 112px;
+  background-color: #f4f4fd;
+  background-image: url(../images/astronaut\ 1.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
 .benefits-title {
   margin-bottom: 8px;
   font-weight: 500;

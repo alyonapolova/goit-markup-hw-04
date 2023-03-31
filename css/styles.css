@@ -172,13 +172,16 @@ img {
 .benefits {
   background-color: var(--white);
 }
+
 .benefits-list {
   display: flex;
   gap: 24px;
 }
+
 .benefits-item {
   width: calc((100%-72px) / 4);
 }
+
 .benefits-bg {
   display: flex;
   height: 112px;
@@ -412,6 +415,7 @@ justify-content: center;}
 
 .footer-soc-link:is(:hover, :focus)
 {background-color: #31D0AA;}
+
 /** -----------------------MENU-PORTFOLIO---------------------- */
 
 .menu {
@@ -469,7 +473,9 @@ justify-content: center;}
   border-left: 1px solid #e7e9fc;
 }
 
-
+.works-item:hover{
+  border: 1px solid #F4F4FD;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 .works-title {
   margin-bottom: 8px;
   font-weight: 500;

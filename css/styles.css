@@ -131,19 +131,22 @@ img {
 /** -----------------------MORE---------------------- */
 .more {
   background-color: var(--main-title-color);
-  text-align: center;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/more_bg.jpg);
-
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto auto;
+  background-size: cover;
+  text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
+
 }
+
+.more-bg{max-width: 1440px;}
+
 .more-title {
   font-weight: 700;
   font-size: 56px;
@@ -152,15 +155,16 @@ img {
   max-width: 496px;
   margin-right: auto;
   margin-left: auto;
-
   color: var(--white);
+ 
 }
 .more-btn {
   margin-top: 48px;
   color: #ffffff;
   background-color: var(--logo-effect);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border: 0;
+  border-color: transparent;
   min-width: 169px;
   height: 56px;
 }
@@ -337,10 +341,10 @@ justify-content: center;
 
 }
 .customers-logo-icon{
-  fill:#8E8F99;}
+  fill: #8e8f99;}
 
 .customers-link:is(:hover, :focus){
-  border: 1px solid var(--hover-color);
+  border-color: var(--hover-color);
   }
 
 .customers-link:is(:hover, :focus) > .customers-logo-icon
@@ -387,7 +391,7 @@ justify-content: center;
   gap: 120px;
 }
 
-.footer-soc-title{
+.footer-soc-text{
   margin-bottom: 16px;
   font-weight: 500;
 font-size: 16px;
@@ -440,8 +444,7 @@ justify-content: center;}
 .menu-btn:is(:hover, :focus) {
   background-color: var(--hover-color);
   color: var(--white);
-  border:transparent;
-  border-radius: 4px;
+  border-color: transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -473,9 +476,9 @@ justify-content: center;}
   border-left: 1px solid #e7e9fc;
 }
 
-.works-item:is(:hover, :focus){
-  border: 1px solid #F4F4FD;
+.works-link:is(:hover, :focus){
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);}
+
 .works-title {
   margin-bottom: 8px;
   font-weight: 500;
